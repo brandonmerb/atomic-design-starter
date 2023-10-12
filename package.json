@@ -1,0 +1,27 @@
+{
+  "name": "atomic-design-starter",
+  "version": "1.0.0",
+  "description": "A simple app that shows how to install and use Atomic Design modules",
+  "private": true,
+  "author": {
+    "name": "Brandon Erb",
+    "email": "brandom.m.erb@gmail.com"
+  },
+  "dependencies": {
+    "@atomicdesign/atomic-genesis": "1.0.0",
+    "@atomicdesign/atomic-origin": "1.0.0",
+    "@atomicdesign/atomic-singularity": "1.0.0",
+    "@atomicdesign/atomic-vue": "1.0.0"
+  },
+  "devDependencies": {
+    "nx": "15.7.0",
+    "typescript": "^5.2.2"
+  },
+  "nx": {
+    "targets": {}
+  },
+  "workspaces": [
+    "libs/**",
+    "apps/**"
+  ]
+}
