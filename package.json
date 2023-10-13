@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "nx": "15.7.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@atomicdesign/atomic-engine": "1.0.0"
   },
   "nx": {
     "targets": {}
