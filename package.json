@@ -14,7 +14,7 @@
     "@atomicdesign/atomic-vue": "1.0.0"
   },
   "devDependencies": {
-    "nx": "15.7.0",
+    "nx": "16.10.0",
     "typescript": "^5.2.2",
     "@atomicdesign/atomic-engine": "1.0.0"
   },
