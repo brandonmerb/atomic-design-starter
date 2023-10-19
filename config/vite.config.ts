@@ -13,7 +13,7 @@ import swc from 'unplugin-swc'
 // We use Vue in this project, so the compiler needs a way to handle that via plugins
 import vue from '@vitejs/plugin-vue'
 
-import { viteMonorepoOptionalLocals } from "@atomicdesign/atomic-engine";
+// import { viteMonorepoOptionalLocals } from "@atomicdesign/atomic-engine";
 
 
 export default defineConfig((config: ConfigEnv): UserConfig => {
@@ -24,16 +24,16 @@ export default defineConfig((config: ConfigEnv): UserConfig => {
       rollupTypes: true,
     }),
     swc.vite({
-      configFile: './.swcrc'
+      configFile: './config/.swcrc'
     }),
     vue(),
 
-    viteMonorepoOptionalLocals({
-      root: "./",
-      overrides: {
-        "@atomicdesign/**": "../libs/@atomicdesign"
-      }
-    })
+    // viteMonorepoOptionalLocals({
+    //   root: "./",
+    //   overrides: {
+    //     "@atomicdesign/**": "../libs/@atomicdesign"
+    //   }
+    // })
   ]
   return {
     plugins: plugins,

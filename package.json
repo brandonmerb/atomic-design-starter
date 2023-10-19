@@ -9,10 +9,9 @@
     "email": "brandom.m.erb@gmail.com"
   },
   "scripts": {
-    "clean": "rimraf ./dist",
-    "build": "npm run clean && npm run build:vite",
-    "build:vite": "vite build -c vite.config.ts",
-    "serve": "vite serve -c vite.config.ts"
+    "prebuild": "rimraf ./dist",
+    "build": "vite build -c ./config/vite.config.ts",
+    "serve": "vite serve -c ./config/vite.config.ts"
   },
   "dependencies": {
     "@atomicdesign/atomic-origin": "1.0.0",
@@ -37,8 +36,5 @@
     "vite": "^4.4.11",
     "vite-tsconfig-paths": "^4.2.1",
     "unplugin-swc": "^1.4.3"
-  },
-  "nx": {
-    "targets": {}
   }
 }
