@@ -1,9 +1,9 @@
 import { useAtomicApi } from '@atomicdesign/atomic-singularity';
-import { useAtomicLogging } from "@atomicdesign/atomic-sdk/logging";
+import { useAtomicSDK } from "@atomicdesign/atomic-sdk";
 import { useAtomicVue } from '@atomicdesign/atomic-vue';
 // import { OriginNebula } from '@atomicdesign/atomic-origin';
 
 useAtomicApi()
-  .use(useAtomicLogging())
+  .use(useAtomicSDK)
   .use(useAtomicVue())
   .start()
